@@ -1,5 +1,6 @@
 // ffffff-e5b155-d5ac63-e3a14a-a98a5a-7c6850
 // ffffff-e3a14a-333333-2c4a58
+$colors-count: 8;
 $primary: #F9CE34;
 $color-1: #F9CE34;
 $color-2: #f54831;
@@ -22,4 +23,5 @@ $color-8: #a98a5a;
     --color-6: #{$color-6};
     --color-7: #{$color-7};
     --color-8: #{$color-8};
+    --colors-count: #{$colors-count};
 }

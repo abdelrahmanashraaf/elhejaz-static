@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-    const I = 8;
+    const I = getComputedStyle(document.documentElement).getPropertyValue('--colors-count');
     const colors = [];
     for (let index = 0; index < I; index++) {
         colors[index] = getComputedStyle(document.documentElement).getPropertyValue('--color-' + index)

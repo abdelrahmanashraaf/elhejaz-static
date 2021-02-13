@@ -16,6 +16,7 @@
   --color-6: #2c4a58;
   --color-7: #7c6850;
   --color-8: #a98a5a;
+  --colors-count: 8;
 }
 
 html,
@@ -2618,6 +2619,8 @@ ol {
   z-index: 5000;
   top: 50%;
   right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .picker-container .picker-input-wrapper {
