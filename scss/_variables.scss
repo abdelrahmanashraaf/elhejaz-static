@@ -1,4 +1,12 @@
+// ffffff-e5b155-d5ac63-e3a14a-a98a5a-7c6850
+// ffffff-e3a14a-333333-2c4a58
 $primary: #F9CE34;
+$primary-1: #F9CE34;
+$primary-2: #f54831;
 :root {
+    // main colors
     --primary-color: #{$primary};
+    // 2 set for colors
+    --color-1: #{$primary-1};
+    --color-2: #{$primary-2};
 }

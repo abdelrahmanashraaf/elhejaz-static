@@ -8,6 +8,8 @@
 /*----------------------------------------*/
 :root {
   --primary-color: #F9CE34;
+  --color-1: #F9CE34;
+  --color-2: #f54831;
 }
 
 html,
@@ -2605,14 +2607,14 @@ ol {
   }
 }
 
-input[type='color'] {
-  padding: 0;
-  width: 150%;
-  height: 150%;
-  margin: -25%;
+.picker-container {
+  position: fixed;
+  z-index: 5000;
+  top: 50%;
+  right: 20px;
 }
 
-.picker-input-wrapper {
+.picker-container .picker-input-wrapper {
   overflow: hidden;
   width: 2em;
   height: 2em;
@@ -2623,10 +2625,53 @@ input[type='color'] {
   margin: 1em;
 }
 
-.picker-container {
-  position: fixed;
-  z-index: 5000;
-  top: 50%;
-  right: 20px;
+.picker-container .picker-btn-wrapper {
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.picker-container input[type='color'],
+.picker-container .cp-btn {
+  padding: 0;
+  width: 150%;
+  height: 150%;
+  margin: -25%;
+}
+
+.picker-container .cp-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: var(--primary-color);
+  border: unset;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.picker-container #cp_btn_1 {
+  background: var(--color-1);
+}
+
+.picker-container #cp_btn_2 {
+  background: var(--color-2);
+}
+
+.picker-container #cp_btn_3 {
+  background: var(--primary-color-3);
+}
+
+.picker-container .cp-btn-selected {
+  border: solid;
 }
 /*# sourceMappingURL=style.css.map */
