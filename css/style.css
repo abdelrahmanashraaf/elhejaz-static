@@ -493,10 +493,11 @@ ol {
 }
 
 .logo-area {
+    width: 17%;
     float: left;
     display: inline-block;
     background: #121212;
-    padding: 20px 60px 30px;
+    padding: 20px 40px 35px;
 }
 
 .phone-number {
@@ -1892,6 +1893,13 @@ ol {
 /* Medium screen : 992px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .projects-slider {
+        padding: 0 40px;
+        margin-top: 00px;
+    }
+    .intro-text p {
+        margin-top: 30px;
+    }
     .phone-number {
         margin-right: 30px;
     }
@@ -1924,6 +1932,20 @@ ol {
 /* Tablet :768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .spad {
+        padding: 50px 0 0 0;
+    }
+    .pb50 {
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .projects-slider {
+        padding: 0 40px;
+        margin-top: 00px;
+    }
+    .intro-text p {
+        margin-top: 30px;
+    }
     .logo-area {
         padding: 20px 40px 30px;
     }
@@ -2035,6 +2057,17 @@ ol {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
+    .spad {
+        padding: 50px 0;
+    }
+    .pb50 {
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    .logo-area {
+        width: 30%;
+        padding: 10px 7% 20px;
+    }
     h1,
     .sp-title {
         font-size: 45px;
@@ -2149,6 +2182,7 @@ ol {
     }
     .projects-filter-nav {
         text-align: left;
+        margin-top: 0px;
     }
     .footer-section .footer-social {
         width: auto;
@@ -2182,8 +2216,14 @@ ol {
 /* small mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+    .spad {
+        padding: 50px 0;
+    }
+    .pb50 {
+        padding-bottom: 0px;
+    }
     .logo-area {
-        padding: 20px 30px 30px;
+        padding: 10px 10px 10px;
     }
     .header-area {
         background: #121212;
@@ -2192,6 +2232,7 @@ ol {
     .nav-menu {
         width: 100%;
         left: 0;
+        height: 25%;
         margin-top: 0;
         border-top: 2px solid;
     }
@@ -2222,10 +2263,27 @@ ol {
     .projects-slider {
         padding: 0 15px;
     }
+    .logo {
+        width: 220%;
+        height: 200%;
+    }
+    .intro-text p {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .service-box {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+    .cta-section .cta-content p {
+        color: #fff;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .logo {
-    width: 175px;
+    width: 80%;
     height: 10%;
 }
 
