@@ -6,6 +6,10 @@
  ------------------------------------ 
  ====================================*/
 /*----------------------------------------*/
+:root {
+  --primary-color: #F9CE34;
+}
+
 html,
 body {
   height: 100%;
@@ -30,7 +34,7 @@ h1 {
 }
 
 h1 span {
-  background: #F9CE34;
+  background: var(--primary-color);
   padding: 0 10px;
   color: #222222;
   display: inline-block;
@@ -86,7 +90,7 @@ ol {
 }
 
 .sp-title span {
-  background: #F9CE34;
+  background: var(--primary-color);
   padding: 0 0;
   color: #222222;
   display: inline-block;
@@ -123,7 +127,7 @@ ol {
 .section-title h1,
 .section-title h2 {
   display: inline-block;
-  background: #F9CE34;
+  background: var(--primary-color);
   padding: 0 20px;
   margin-bottom: 0;
   font-size: 60px;
@@ -246,8 +250,8 @@ ol {
 }
 
 .site-btn.sb-solid-color {
-  background: #F9CE34;
-  border-color: #F9CE34;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .site-btn.sb-solid-color:after, .site-btn.sb-solid-color:before {
@@ -257,11 +261,11 @@ ol {
 .site-btn.sb-solid-dark {
   background: #222;
   border-color: #222;
-  color: #F9CE34;
+  color: var(--primary-color);
 }
 
 .site-btn.sb-solid-dark:after, .site-btn.sb-solid-dark:before {
-  background: #F9CE34;
+  background: var(--primary-color);
 }
 
 @-webkit-keyframes slideInRight {
@@ -309,7 +313,7 @@ ol {
 }
 
 .accordion-area .panel-header.active {
-  background: #F9CE34;
+  background: var(--primary-color);
 }
 
 .accordion-area .panel-header.active .panel-link:after {
@@ -326,7 +330,7 @@ ol {
   top: 0;
   height: 100%;
   width: 50px;
-  background: #F9CE34;
+  background: var(--primary-color);
   border: none;
   cursor: pointer;
 }
@@ -371,7 +375,7 @@ ol {
 }
 
 .tab-element .nav-tabs .nav-link.active {
-  background: #F9CE34;
+  background: var(--primary-color);
   border: none;
 }
 
@@ -474,7 +478,7 @@ ol {
   float: right;
   display: inline-block;
   padding: 5px 10px;
-  background: #F9CE34;
+  background: var(--primary-color);
   font-weight: 700;
   letter-spacing: 1px;
   margin-top: 30px;
@@ -517,7 +521,7 @@ ol {
   left: 50%;
   margin-left: 1px;
   top: 0;
-  background: #F9CE34;
+  background: var(--primary-color);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -565,7 +569,7 @@ ol {
 }
 
 .social-links a:hover {
-  color: #F9CE34;
+  color: var(--primary-color);
 }
 
 .hero-right-text {
@@ -615,7 +619,7 @@ ol {
 
 .hero-slider .owl-nav .owl-prev:hover,
 .hero-slider .owl-nav .owl-next:hover {
-  color: #F9CE34;
+  color: var(--primary-color);
 }
 
 .hero-slider .owl-nav .owl-prev i {
@@ -647,7 +651,7 @@ ol {
 
 .slide-num-holder span {
   font-size: 48px;
-  color: #F9CE34;
+  color: var(--primary-color);
   position: relative;
   top: -10px;
   right: -10px;
@@ -670,9 +674,9 @@ ol {
   content: "";
   height: calc(100% + 50px);
   width: 330px;
-  border-top: 150px solid #F9CE34;
-  border-left: 150px solid #F9CE34;
-  border-bottom: 90px solid #F9CE34;
+  border-top: 150px solid var(--primary-color);
+  border-left: 150px solid var(--primary-color);
+  border-bottom: 90px solid var(--primary-color);
   top: 0;
   left: 0;
   opacity: 0.73;
@@ -753,7 +757,7 @@ ol {
 }
 
 .service-box:hover .sb-icon {
-  background-color: #F9CE34;
+  background-color: var(--primary-color);
 }
 
 .service-box:hover .sb-icon .sb-img-icon {
@@ -766,7 +770,7 @@ ol {
 }
 
 .service-box:hover .readmore {
-  background-color: #F9CE34;
+  background-color: var(--primary-color);
   padding: 2px 10px;
 }
 
@@ -876,7 +880,7 @@ ol {
 }
 
 .milestone:hover:after {
-  background: #F9CE34;
+  background: var(--primary-color);
 }
 
 /*----------------------------------------*/
@@ -901,7 +905,7 @@ ol {
 }
 
 .projects-filter-nav li.btn-active {
-  background: #F9CE34;
+  background: var(--primary-color);
   color: #222222;
 }
 
@@ -940,7 +944,7 @@ ol {
 }
 
 .projects-slider .single-project .project-content p {
-  color: #F9CE34;
+  color: var(--primary-color);
   font-weight: 500;
   position: relative;
   top: 40px;
@@ -952,7 +956,7 @@ ol {
   position: absolute;
   right: 50px;
   bottom: 30px;
-  background: #F9CE34;
+  background: var(--primary-color);
   font-size: 14px;
   font-weight: 700;
   color: #222;
@@ -1002,7 +1006,7 @@ ol {
 
 .projects-slider .owl-nav .owl-prev:hover,
 .projects-slider .owl-nav .owl-next:hover {
-  background: #F9CE34;
+  background: var(--primary-color);
 }
 
 .projects-slider .owl-nav .owl-prev i {
@@ -1090,7 +1094,7 @@ ol {
 }
 
 .footer-item ul li a:hover {
-  background: #F9CE34;
+  background: var(--primary-color);
 }
 
 /*----------------------------------------*/
@@ -1108,7 +1112,7 @@ ol {
 
 .page-header-section .header-title span {
   background: none;
-  color: #F9CE34;
+  color: var(--primary-color);
 }
 
 /*----------------------------------------*/
@@ -1151,7 +1155,7 @@ ol {
 }
 
 .testimonials-section .qut {
-  color: #F9CE34;
+  color: var(--primary-color);
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -1165,7 +1169,7 @@ ol {
 .ts-item h4 {
   font-size: 15px;
   font-weight: 400;
-  color: #F9CE34;
+  color: var(--primary-color);
   margin-bottom: 0;
 }
 
@@ -1211,7 +1215,7 @@ ol {
 }
 
 .team-member:hover .member-info {
-  background: #F9CE34;
+  background: var(--primary-color);
   -webkit-box-shadow: 0px 0px 0px rgba(114, 114, 114, 0.21);
   box-shadow: 0px 0px 0px rgba(114, 114, 114, 0.21);
 }
@@ -1272,7 +1276,7 @@ ol {
 }
 
 .service-slider .owl-dots .owl-dot.active {
-  background: #F9CE34;
+  background: var(--primary-color);
 }
 
 .service-text h2 {
@@ -1334,7 +1338,7 @@ ol {
 }
 
 .solid-service-box:hover {
-  background: #F9CE34;
+  background: var(--primary-color);
 }
 
 .solid-service-box:hover h2 {
@@ -1388,7 +1392,7 @@ ol {
   font-weight: 700;
   color: #222;
   display: inline-block;
-  background: #F9CE34;
+  background: var(--primary-color);
   padding: 4px 15px;
   margin-bottom: 20px;
 }
@@ -1421,7 +1425,7 @@ ol {
 }
 
 .blog-post:hover .thumb:after {
-  background: #F9CE34;
+  background: var(--primary-color);
 }
 
 .pagination {
@@ -1439,7 +1443,7 @@ ol {
 
 .pagination a.active {
   font-size: 48px;
-  color: #F9CE34;
+  color: var(--primary-color);
 }
 
 .search {
@@ -1504,7 +1508,7 @@ ol {
 }
 
 .widget-area ul li a:hover {
-  background: #F9CE34;
+  background: var(--primary-color);
   color: #222;
 }
 
@@ -1580,7 +1584,7 @@ ol {
   height: 100%;
   left: 0;
   top: 0;
-  background: #F9CE34;
+  background: var(--primary-color);
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1837,9 +1841,9 @@ ol {
     line-height: 60px;
   }
   .slide-content:after {
-    border-top: 100px solid #F9CE34;
-    border-left: 100px solid #F9CE34;
-    border-bottom: 60px solid #F9CE34;
+    border-top: 100px solid var(--primary-color);
+    border-left: 100px solid var(--primary-color);
+    border-bottom: 60px solid var(--primary-color);
   }
   .hero-slider .owl-nav {
     left: 170px;
@@ -2599,5 +2603,30 @@ ol {
   .counter {
     margin-bottom: 40px;
   }
+}
+
+input[type='color'] {
+  padding: 0;
+  width: 150%;
+  height: 150%;
+  margin: -25%;
+}
+
+.picker-input-wrapper {
+  overflow: hidden;
+  width: 2em;
+  height: 2em;
+  /* optional formatting below here */
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 3px 0px grey;
+          box-shadow: 1px 1px 3px 0px grey;
+  margin: 1em;
+}
+
+.picker-container {
+  position: fixed;
+  z-index: 5000;
+  top: 50%;
+  right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
