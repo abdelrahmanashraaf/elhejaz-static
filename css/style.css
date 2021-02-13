@@ -91,12 +91,12 @@ ol {
 
 .sp-title {
     font-size: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
 .sp-title span {
     background: #F9CE34;
-    padding: 0 10px;
+    padding: 0 0;
     color: #222222;
     display: inline-block;
 }
@@ -230,6 +230,30 @@ ol {
     bottom: 18px;
 }
 
+@-webkit-keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 .site-btn.sb-light {
     color: #fff;
 }
@@ -237,6 +261,11 @@ ol {
 .site-btn.sb-light:after,
 .site-btn.sb-light:before {
     background: #fff;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    --animate-duration: 1s;
+    --animate-delay: 5s;
+    --animate-repeat: 1;
 }
 
 .site-btn.sb-dark {
@@ -246,6 +275,11 @@ ol {
 .site-btn.sb-dark:after,
 .site-btn.sb-dark:before {
     background: #222222;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    --animate-duration: 1s;
+    --animate-delay: 5s;
+    --animate-repeat: 1;
 }
 
 .site-btn.sb-solid-color {
@@ -2193,4 +2227,230 @@ ol {
 .logo {
     width: 175px;
     height: 10%;
+}
+
+.ml6 {
+    position: relative;
+    font-weight: 600;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 00px;
+    color: #fff;
+    z-index: 30;
+    bottom: 60%;
+    transform-origin: right center;
+}
+
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+:root {
+    --delay: 0;
+    --duration: 800ms;
+    --iterations: 1;
+}
+
+
+/* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+
+.reveal-holder {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.reveal-holder .reveal-block {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 101%;
+    background: white;
+}
+
+.reveal-holder .reveal-block::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: lightgray;
+    transition-property: transform;
+    transition-duration: 0.7s;
+}
+
+.reveal-block.gradient::before {
+    background: linear-gradient(to left, #eebf56, #f46ca3);
+}
+
+.reveal-block.gradient-two::before {
+    background: linear-gradient(to left, #1b9edf, #af74c3);
+}
+
+.reveal-block.extra {
+    background: #1b9edf;
+}
+
+.reveal-block.extra::before {
+    background: #af74c3;
+}
+
+.reveal-block.top.aos-animate::before,
+.reveal-block.bottom.aos-animate::before {
+    transform: scaleY(1);
+}
+
+.reveal-block.left.aos-animate::before,
+.reveal-block.right.aos-animate::before {
+    transform: scaleX(1);
+}
+
+.reveal-block.top::before {
+    transform: scaleY(0);
+    transform-origin: 0% 100%;
+}
+
+.reveal-block.left::before {
+    transform: scaleX(0);
+    transform-origin: 100% 0%;
+}
+
+.reveal-block.right::before {
+    transform: scaleX(0);
+    transform-origin: 0% 100%;
+}
+
+.reveal-block.bottom::before {
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+}
+
+
+/* AOS animate */
+
+[data-aos="reveal-top"],
+[data-aos="reveal-left"],
+[data-aos="reveal-right"],
+[data-aos="reveal-bottom"] {
+    transition-property: transform;
+    transition-delay: 0.5s;
+}
+
+[data-aos="reveal-top"] {
+    transform: scaleY(1);
+}
+
+[data-aos="reveal-top"].aos-animate {
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+}
+
+[data-aos="reveal-left"] {
+    transform: scaleX(1);
+}
+
+[data-aos="reveal-left"].aos-animate {
+    transform: scaleX(0);
+    transform-origin: 0% 100%;
+}
+
+[data-aos="reveal-right"] {
+    transform: scaleX(1);
+}
+
+[data-aos="reveal-right"].aos-animate {
+    transform: scaleX(0);
+    transform-origin: 100% 0%;
+}
+
+[data-aos="reveal-bottom"] {
+    transform: scaleY(1);
+}
+
+[data-aos="reveal-bottom"].aos-animate {
+    transform: scaleY(0);
+    transform-origin: 0% 100%;
+}
+
+[data-aos="reveal-item"] {
+    visibility: hidden;
+    transition-property: visibility;
+    transition-duration: 0s;
+}
+
+[data-aos="reveal-item"].aos-animate {
+    visibility: visible;
+}
+
+.reveal-text,
+.reveal-text::after {
+    animation-delay: var(--animation-delay, 6s);
+    animation-iteration-count: var(--iterations, 1);
+    animation-duration: var(--duration, 2500ms);
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal-text {
+    --animation-delay: var(--delay, 1s);
+    --animation-duration: var(--duration, 800ms);
+    --animation-iterations: var(--iterations, 1);
+    position: relative;
+    font-size: 3.9vw;
+    animation-name: clip-text;
+    color: #fff;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.reveal-text::after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F9CE34;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: text-revealer;
+}
+
+@keyframes clip-text {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes text-revealer {
+    0%,
+    50% {
+        transform-origin: 0 50%;
+    }
+    60%,
+    100% {
+        transform-origin: 100% 50%;
+    }
+    60% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
 }
