@@ -1,12 +1,25 @@
 // ffffff-e5b155-d5ac63-e3a14a-a98a5a-7c6850
 // ffffff-e3a14a-333333-2c4a58
 $primary: #F9CE34;
-$primary-1: #F9CE34;
-$primary-2: #f54831;
+$color-1: #F9CE34;
+$color-2: #f54831;
+$color-3: #e5b155;
+$color-4: #e3a14a;
+$color-5: #333333;
+$color-6: #2c4a58;
+$color-7: #7c6850;
+$color-8: #a98a5a;
+// css variables
 :root {
     // main colors
     --primary-color: #{$primary};
     // 2 set for colors
-    --color-1: #{$primary-1};
-    --color-2: #{$primary-2};
+    --color-1: #{$color-1};
+    --color-2: #{$color-2};
+    --color-3: #{$color-3};
+    --color-4: #{$color-4};
+    --color-5: #{$color-5};
+    --color-6: #{$color-6};
+    --color-7: #{$color-7};
+    --color-8: #{$color-8};
 }

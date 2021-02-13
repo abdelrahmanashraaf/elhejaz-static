@@ -1,11 +1,10 @@
 $(document).ready(() => {
-    let btn_1_color;
-    let btn_2_color;
 
-    setTimeout(() => {
-        btn_1_color = getComputedStyle(document.documentElement).getPropertyValue('--color-1');
-        btn_2_color = getComputedStyle(document.documentElement).getPropertyValue('--color-2');
-    }, 500);
+    const I = 8;
+    const colors = [];
+    for (let index = 0; index < I; index++) {
+        colors[index] = getComputedStyle(document.documentElement).getPropertyValue('--color-' + index)
+    }
 
     // clear all class
 
@@ -13,6 +12,7 @@ $(document).ready(() => {
         $(".no-border").removeClass("cp-btn-selected");
     }
 
+    // color picker
     const picker_1 = $("#cp_3").first();
     picker_1.on('input', (e) => {
         removeBorder();
@@ -21,20 +21,14 @@ $(document).ready(() => {
     });
 
 
+    // button select pickers
+    for (let index = 0; index < I; index++) {
 
-    const picker_btn_1 = $("#cp_btn_1").first();
+        $("#cp_btn_" + index).first().on('click', (e) => {
+            document.documentElement.style.setProperty('--primary-color', colors[index]);
+            removeBorder();
+            $(e.target).addClass("cp-btn-selected");
+        });
+    }
 
-    picker_btn_1.on('click', (e) => {
-        document.documentElement.style.setProperty('--primary-color', btn_1_color);
-        removeBorder();
-        $(e.target).addClass("cp-btn-selected");
-    });
-
-    const picker_btn_2 = $("#cp_btn_2").first();
-    picker_btn_2.on('click', (e) => {
-        document.documentElement.style.setProperty('--primary-color', btn_2_color);
-        removeBorder();
-        $(e.target).addClass("cp-btn-selected");
-
-    });
 })

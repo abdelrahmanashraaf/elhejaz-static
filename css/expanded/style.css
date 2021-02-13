@@ -10,6 +10,12 @@
   --primary-color: #F9CE34;
   --color-1: #F9CE34;
   --color-2: #f54831;
+  --color-3: #e5b155;
+  --color-4: #e3a14a;
+  --color-5: #333333;
+  --color-6: #2c4a58;
+  --color-7: #7c6850;
+  --color-8: #a98a5a;
 }
 
 html,
@@ -2668,7 +2674,27 @@ ol {
 }
 
 .picker-container #cp_btn_3 {
-  background: var(--primary-color-3);
+  background: var(--color-3);
+}
+
+.picker-container #cp_btn_4 {
+  background: var(--color-4);
+}
+
+.picker-container #cp_btn_5 {
+  background: var(--color-5);
+}
+
+.picker-container #cp_btn_6 {
+  background: var(--color-6);
+}
+
+.picker-container #cp_btn_7 {
+  background: var(--color-7);
+}
+
+.picker-container #cp_btn_8 {
+  background: var(--color-8);
 }
 
 .picker-container .cp-btn-selected {

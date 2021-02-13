@@ -36,14 +36,10 @@
         margin: 0;
         margin-top: 10px;
     }
-    #cp_btn_1 {
-        background: var(--color-1);
-    }
-    #cp_btn_2 {
-        background: var(--color-2);
-    }
-    #cp_btn_3 {
-        background: var(--primary-color-3);
+    @for $i from 1 through 8 {
+        #cp_btn_#{$i} {
+            background: var(--color-#{$i});
+        }
     }
     .cp-btn-selected {
         border: solid;
