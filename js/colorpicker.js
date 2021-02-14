@@ -64,4 +64,19 @@ $(document).ready(() => {
         });
     }
 
+    const picker_4 = $("#ctext_1").first();
+    picker_4.on('input', (e) => {
+        removeBorder();
+        document.documentElement.style.setProperty('--whitetexts-color', e.target.value);
+        $(picker_4).addClass("cback-btn-selected");
+    });
+
+    const picker_5 = $("#ctext_2").first();
+    picker_5.on('input', (e) => {
+        removeBorder();
+        document.documentElement.style.setProperty('var(--darktexts-color)', e.target.value);
+        $(picker_5).addClass("cback-btn-selected");
+    });
+
+
 })

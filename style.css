@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #222222;
+    color: var(--darktexts-color);
     margin: 0;
     margin-bottom: 10px;
     font-weight: 700;
@@ -38,7 +38,7 @@ h1 {
 h1 span {
     background: #F9CE34;
     padding: 0 10px;
-    color: #222222;
+    color: var(--darktexts-color);
     display: inline-block;
 }
 
@@ -97,7 +97,7 @@ ol {
 .sp-title span {
     background: #F9CE34;
     padding: 0 10px;
-    color: #222222;
+    color: var(--darktexts-color);
     display: inline-block;
 }
 
@@ -240,12 +240,12 @@ ol {
 }
 
 .site-btn.sb-dark {
-    color: #222222;
+    color: var(--darktexts-color);
 }
 
 .site-btn.sb-dark:after,
 .site-btn.sb-dark:before {
-    background: #222222;
+    background: var(--darktexts-color);
 }
 
 .site-btn.sb-solid-color {
@@ -255,7 +255,7 @@ ol {
 
 .site-btn.sb-solid-color:after,
 .site-btn.sb-solid-color:before {
-    background: #222222;
+    background: var(--darktexts-color);
 }
 
 .site-btn.sb-solid-dark {
@@ -762,7 +762,7 @@ ol {
 .service-box .readmore {
     font-size: 12px;
     font-weight: 700;
-    color: #222222;
+    color: var(--darktexts-color);
     display: inline-block;
     padding: 2px 0;
     background-color: transparent;
@@ -808,7 +808,7 @@ ol {
     height: 100%;
     right: 0;
     top: 0;
-    background: #222222;
+    background: var(--darktexts-color);
     z-index: 2;
 }
 
@@ -935,7 +935,7 @@ ol {
 
 .projects-filter-nav li.btn-active {
     background: #F9CE34;
-    color: #222222;
+    color: var(--darktexts-color);
 }
 
 .projects-slider {
@@ -1033,7 +1033,7 @@ ol {
     margin-right: 20px;
     font-size: 14px;
     font-weight: 700;
-    color: #222222;
+    color: var(--darktexts-color);
     letter-spacing: 1px;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -1135,7 +1135,7 @@ ol {
     display: inline-block;
     font-size: 15px;
     font-weight: 500;
-    color: #222222;
+    color: var(--darktexts-color);
     padding: 0 5px;
 }
 
@@ -1188,7 +1188,7 @@ ol {
     height: 100%;
     right: 0;
     top: 0;
-    background: #222222;
+    background: var(--darktexts-color);
     z-index: 2;
 }
 
@@ -1263,7 +1263,7 @@ ol {
 }
 
 .team-member .member-info p {
-    color: #222222;
+    color: var(--darktexts-color);
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 0;

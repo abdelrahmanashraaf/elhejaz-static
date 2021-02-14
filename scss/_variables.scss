@@ -3,8 +3,9 @@
 $colors-count: 8;
 $primary: #F9CE34;
 $secondary: #121212;
-$background: #f54831;
+$background: #fff;
 $texts: #fff;
+$darktexts: #222222;
 $color-1: #F9CE34;
 $color-2: #f54831;
 $color-3: #e5b155;
@@ -20,6 +21,7 @@ $color-8: #a98a5a;
     --secondary-color: #{$secondary};
     --background-color: #{$background};
     --whitetexts-color: #{$texts};
+    var(--darktexts-color): #{$darktexts};
     // 2 set for colors
     --color-1: #{$color-1};
     --color-2: #{$color-2};

@@ -98,3 +98,83 @@
         border: solid;
     }
 }
+
+.picker-container1 {
+    position: fixed;
+    z-index: 5000;
+    top: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    right: 20px;
+    transform: translateY(-50%);
+    .picker-input-wrapper {
+        overflow: hidden;
+        width: 2em;
+        height: 2em;
+        /* optional formatting below here */
+        border-radius: 50%;
+        box-shadow: 1px 1px 3px 0px grey;
+        margin: 1em;
+    }
+    .picker-btn-wrapper {
+        overflow: hidden;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type='color'],
+    .cp-btn {
+        padding: 0;
+        width: 150%;
+        height: 150%;
+        margin: -25%;
+    }
+    .cp-btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: var(--primary-color);
+        border: unset;
+        margin: 0;
+        margin-top: 10px;
+    }
+    
+    //background colors
+    input[type='color'],
+    .cback-btn {
+        padding: 0;
+        width: 150%;
+        height: 150%;
+        margin: -25%;
+    }
+    .cback-btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: var(--secondary-color);
+        border: unset;
+        margin: 0;
+        margin-top: 10px;
+    }
+    
+    //secondary colors
+    input[type='color'],
+    .csecondary-btn {
+        padding: 0;
+        width: 150%;
+        height: 150%;
+        margin: -25%;
+    }
+    .csecondary-btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: var(--secondary-color);
+        border: unset;
+        margin: 0;
+        margin-top: 10px;
+    }
+    
+}
