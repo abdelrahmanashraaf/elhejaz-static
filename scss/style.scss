@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #222222;
+    color: var(--darktexts-color);
     margin: 0;
     margin-bottom: 10px;
     font-weight: 700;
@@ -33,7 +33,7 @@ h1 {
     span {
         background: var(--primary-color);
         padding: 0 10px;
-        color: #222222;
+        color: var(--darktexts-color);
         display: inline-block;
     }
 }
@@ -93,7 +93,7 @@ ol {
     span {
         background: var(--primary-color);
         padding: 0 0;
-        color: #222222;
+        color: var(--darktexts-color);
         display: inline-block;
     }
 }
@@ -234,10 +234,10 @@ ol {
         }
     }
     &.sb-dark {
-        color: #222222;
+        color: var(--darktexts-color);
         &:after,
         &:before {
-            background: #222222;
+            background: var(--darktexts-color);
             -webkit-animation-name: slideInRight;
             animation-name: slideInRight;
             --animate-duration: 1s;
@@ -250,12 +250,12 @@ ol {
         border-color: var(--primary-color);
         &:after,
         &:before {
-            background: #222222;
+            background: var(--darktexts-color);
         }
     }
     &.sb-solid-dark {
-        background: #222;
-        border-color: #222;
+        background: var(--secondary-color);
+        border-color: var(--secondary-color);
         color: var(--primary-color);
         &:after,
         &:before {
@@ -366,7 +366,7 @@ ol {
             margin-right: 5px;
             font-size: 14px;
             font-weight: 500;
-            color: #222;
+            color: var(--secondary-color);
             padding: 15px 30px;
             &.active {
                 background: var(--primary-color);
@@ -635,7 +635,7 @@ ol {
     height: 250px;
     position: absolute;
     right: 60px;
-    background: rgba(18, 18, 18, 0.95);
+    background: var(--secondary-color);
     bottom: -40px;
     z-index: 111;
     text-align: right;
@@ -748,7 +748,7 @@ ol {
     .readmore {
         font-size: 12px;
         font-weight: 700;
-        color: #222222;
+        color: var(--darktexts-color);
         display: inline-block;
         padding: 2px 0;
         background-color: transparent;
@@ -791,7 +791,7 @@ ol {
         height: 100%;
         right: 0;
         top: 0;
-        background: #222222;
+        background: var(--secondary-color);
         z-index: 2;
     }
     .cta-image-box {
@@ -906,7 +906,7 @@ ol {
         transition: .4s;
         &.btn-active {
             background: var(--primary-color);
-            color: #222222;
+            color: var(--darktexts-color);
         }
     }
 }
@@ -959,7 +959,7 @@ ol {
             background: var(--primary-color);
             font-size: 14px;
             font-weight: 700;
-            color: #222;
+            color: var(--secondary-color);
             display: inline-block;
             padding: 2px 8px;
             -webkit-transition: all 0.4s ease 0s;
@@ -995,7 +995,7 @@ ol {
             margin-right: 20px;
             font-size: 14px;
             font-weight: 700;
-            color: #222222;
+            color: var(--darktexts-color);
             letter-spacing: 1px;
             -webkit-transition: all 0.4s;
             -o-transition: all 0.4s;
@@ -1073,7 +1073,7 @@ ol {
         right: 60px;
         top: -55px;
         padding-top: 20px;
-        background: #222;
+        background: var(--secondary-color);
     }
 }
 
@@ -1086,7 +1086,7 @@ ol {
             display: inline-block;
             font-size: 15px;
             font-weight: 500;
-            color: #222222;
+            color: var(--darktexts-color);
             padding: 0 5px;
             &:hover {
                 background: var(--primary-color);
@@ -1135,7 +1135,7 @@ ol {
         height: 100%;
         right: 0;
         top: 0;
-        background: #222222;
+        background: var(--darktexts-color);
         z-index: 2;
     }
     .testimonials-image-box {
@@ -1202,7 +1202,7 @@ ol {
             margin-bottom: 0;
         }
         p {
-            color: #222222;
+            color: var(--darktexts-color);
             font-size: 15px;
             font-weight: 500;
             margin-bottom: 0;
@@ -1227,7 +1227,7 @@ ol {
     p {
         font-size: 16px;
         font-weight: 500;
-        color: #222;
+        color: var(--secondary-color);
         margin-bottom: 0;
     }
 }
@@ -1320,7 +1320,7 @@ ol {
         font-size: 12px;
         font-weight: 700;
         text-transform: uppercase;
-        color: #222;
+        color: var(--secondary-color);
         opacity: 0;
         visibility: hidden;
         position: relative;
@@ -1332,7 +1332,7 @@ ol {
     &:hover {
         background: var(--primary-color);
         h2 {
-            color: #222;
+            color: var(--secondary-color);
         }
         .readmore {
             visibility: visible;
@@ -1383,7 +1383,7 @@ ol {
     .post-date {
         font-size: 14px;
         font-weight: 700;
-        color: #222;
+        color: var(--secondary-color);
         display: inline-block;
         background: var(--primary-color);
         padding: 4px 15px;
@@ -1392,7 +1392,7 @@ ol {
     h2 {
         font-size: 30px;
         a {
-            color: #222;
+            color: var(--secondary-color);
         }
     }
     p {
@@ -1418,7 +1418,7 @@ ol {
 .pagination {
     display: inline-block;
     padding: 20px 30px;
-    background: #222;
+    background: var(--secondary-color);
     border-radius: 0;
     a {
         font-size: 18px;
@@ -1489,9 +1489,9 @@ ol {
                 }
                 &:hover {
                     background: var(--primary-color);
-                    color: #222;
+                    color: var(--secondary-color);
                     &:after {
-                        color: #222;
+                        color: var(--secondary-color);
                     }
                 }
             }
@@ -1605,7 +1605,7 @@ ol {
 .cf-social {
     margin-top: 50px;
     a {
-        color: #222;
+        color: var(--secondary-color);
         margin-right: 25px;
     }
 }
@@ -1659,7 +1659,7 @@ ol {
         display: inline-block;
         margin-right: 40px;
         font-size: 14px;
-        color: #222;
+        color: var(--secondary-color);
         cursor: pointer;
         font-weight: 500;
         &.active {
@@ -1858,11 +1858,11 @@ ol {
         margin-bottom: 30px;
     }
     .cta-section {
-        background: #222;
+        background: var(--secondary-color);
         margin-bottom: 0;
     }
     .testimonials-section {
-        background: #222;
+        background: var(--secondary-color);
         margin: 0;
     }
     .testimonials-image-box,
@@ -2033,11 +2033,11 @@ ol {
         }
     }
     .cta-section {
-        background: #222;
+        background: var(--secondary-color);
         margin-bottom: 0;
     }
     .testimonials-section {
-        background: #222;
+        background: var(--secondary-color);
         margin: 0;
     }
     .testimonials-image-box,
@@ -2183,6 +2183,10 @@ ol {
         display: inline-block;
         line-height: 1em;
     }
+}
+
+.intro-section {
+    overflow-y: hidden;
 }
 
 #button {

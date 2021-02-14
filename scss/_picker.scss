@@ -41,7 +41,7 @@
     }
     @for $i from 1 through 8 {
         #cp_btn_#{$i} {
-            background: var(--color-#{$i});
+            background: var(--colorprimary-#{$i});
         }
     }
     .cp-btn-selected {
@@ -59,14 +59,14 @@
         width: 20px;
         height: 20px;
         border-radius: 100%;
-        background: var(--secondary-color);
+        background: var(--background-color);
         border: unset;
         margin: 0;
         margin-top: 10px;
     }
     @for $i from 1 through 8 {
         #cback_btn_#{$i} {
-            background: var(--color-#{$i});
+            background: var(--colorbackground-#{$i});
         }
     }
     .cback-btn-selected {
@@ -91,7 +91,7 @@
     }
     @for $i from 1 through 8 {
         #csecondary_btn_#{$i} {
-            background: var(--color-#{$i});
+            background: var(--colorsecondary-#{$i});
         }
     }
     .csecondary-btn-selected {
@@ -99,6 +99,7 @@
     }
 }
 
+//Other picks for texts and icons
 .picker-container1 {
     position: fixed;
     z-index: 5000;
@@ -140,7 +141,6 @@
         margin: 0;
         margin-top: 10px;
     }
-    
     //background colors
     input[type='color'],
     .cback-btn {
@@ -153,12 +153,11 @@
         width: 20px;
         height: 20px;
         border-radius: 100%;
-        background: var(--secondary-color);
+        background: var(--background-color);
         border: unset;
         margin: 0;
         margin-top: 10px;
     }
-    
     //secondary colors
     input[type='color'],
     .csecondary-btn {
@@ -176,5 +175,4 @@
         margin: 0;
         margin-top: 10px;
     }
-    
 }
