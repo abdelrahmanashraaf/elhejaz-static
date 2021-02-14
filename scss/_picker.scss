@@ -47,31 +47,6 @@
     .cp-btn-selected {
         border: solid;
     }
-    //secondary colors
-    input[type='color'],
-    .cs-btn {
-        padding: 0;
-        width: 150%;
-        height: 150%;
-        margin: -25%;
-    }
-    .cs-btn {
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        background: var(--secondary-color);
-        border: unset;
-        margin: 0;
-        margin-top: 10px;
-    }
-    @for $i from 1 through 8 {
-        #cs_btn_#{$i} {
-            background: var(--color-#{$i});
-        }
-    }
-    .cs-btn-selected {
-        border: solid;
-    }
     //background colors
     input[type='color'],
     .cback-btn {
@@ -84,7 +59,7 @@
         width: 20px;
         height: 20px;
         border-radius: 100%;
-        background: var(--secondary-color)var(--secondary-color);
+        background: var(--secondary-color);
         border: unset;
         margin: 0;
         margin-top: 10px;
@@ -95,6 +70,31 @@
         }
     }
     .cback-btn-selected {
+        border: solid;
+    }
+    //secondary colors
+    input[type='color'],
+    .csecondary-btn {
+        padding: 0;
+        width: 150%;
+        height: 150%;
+        margin: -25%;
+    }
+    .csecondary-btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: var(--secondary-color);
+        border: unset;
+        margin: 0;
+        margin-top: 10px;
+    }
+    @for $i from 1 through 8 {
+        #csecondary_btn_#{$i} {
+            background: var(--color-#{$i});
+        }
+    }
+    .csecondary-btn-selected {
         border: solid;
     }
 }

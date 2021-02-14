@@ -31,7 +31,7 @@ $(document).ready(() => {
 
 
 
-    const picker_2 = $("#cback_3").first();
+    const picker_2 = $("#csecondary_3").first();
     picker_2.on('input', (e) => {
         removeBorder();
         document.documentElement.style.setProperty('--secondary-color', e.target.value);
@@ -40,8 +40,25 @@ $(document).ready(() => {
 
     for (let index = 0; index < I; index++) {
 
-        $("#cback_btn_" + index).first().on('click', (e) => {
+        $("#csecondary_btn_" + index).first().on('click', (e) => {
             document.documentElement.style.setProperty('--secondary-color', colors[index]);
+            $(".no-border").removeClass("csecondary-btn-selected");
+            $(e.target).addClass("csecondary-btn-selected");
+        });
+    }
+
+
+    const picker_3 = $("#cback_3").first();
+    picker_3.on('input', (e) => {
+        removeBorder();
+        document.documentElement.style.setProperty('--background-color', e.target.value);
+        $(picker_1).addClass("cback-btn-selected");
+    });
+
+    for (let index = 0; index < I; index++) {
+
+        $("#cback_btn_" + index).first().on('click', (e) => {
+            document.documentElement.style.setProperty('--background-color', colors[index]);
             $(".no-border").removeClass("cback-btn-selected");
             $(e.target).addClass("cback-btn-selected");
         });

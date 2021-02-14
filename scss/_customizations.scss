@@ -146,7 +146,7 @@
     position: relative;
     font-size: 3.9vw;
     animation-name: clip-text;
-    color: #fff;
+    color: var(--background-color);
     white-space: nowrap;
     cursor: default;
 }
@@ -190,7 +190,7 @@
     z-index: 1;
     &:before {
         content: "";
-        background: #fff;
+        background: var(--background-color);
         width: 80%;
         height: 80%;
         border-radius: 100%;
@@ -203,7 +203,7 @@
     }
     &:after {
         content: "";
-        background: #fff;
+        background: var(--background-color);
         width: 80%;
         height: 80%;
         border-radius: 100%;
@@ -224,7 +224,7 @@
         clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
     }
     .counter-icon {
-        color: #fff;
+        color: var(--background-color);
         background: linear-gradient(45deg, #B81242 49%, #D74A75 50%);
         font-size: 33px;
         line-height: 70px;
