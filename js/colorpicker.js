@@ -20,6 +20,13 @@ $(document).ready(() => {
         $(picker_1).addClass("cp-btn-selected");
     });
 
+    const picker_2 = $("#cs_3").first();
+    picker_2.on('input', (e) => {
+        removeBorder();
+        document.documentElement.style.setProperty('--secondary-color', e.target.value);
+        $(picker_1).addClass("cp-btn-selected");
+    });
+
 
     // button select pickers
     for (let index = 0; index < I; index++) {

@@ -2,6 +2,8 @@
     position: fixed;
     z-index: 5000;
     top: 50%;
+    display: flex;
+    flex-wrap: wrap;
     right: 20px;
     transform: translateY(-50%);
     .picker-input-wrapper {
@@ -43,6 +45,54 @@
         }
     }
     .cp-btn-selected {
+        border: solid;
+    }
+    input[type='color'],
+    .cs-btn {
+        padding: 0;
+        width: 150%;
+        height: 150%;
+        margin: -25%;
+    }
+    .cs-btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: var(--secondary-color);
+        border: unset;
+        margin: 0;
+        margin-top: 10px;
+    }
+    @for $i from 1 through 8 {
+        #cs_btn_#{$i} {
+            background: var(--color-#{$i});
+        }
+    }
+    .cs-btn-selected {
+        border: solid;
+    }
+    input[type='color'],
+    .ct-btn {
+        padding: 0;
+        width: 150%;
+        height: 150%;
+        margin: -25%;
+    }
+    .ct-btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: var(--background-color);
+        border: unset;
+        margin: 0;
+        margin-top: 10px;
+    }
+    @for $i from 1 through 8 {
+        #ct_btn_#{$i} {
+            background: var(--color-#{$i});
+        }
+    }
+    .ct-btn-selected {
         border: solid;
     }
 }
