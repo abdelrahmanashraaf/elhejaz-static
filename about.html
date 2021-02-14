@@ -59,7 +59,7 @@
     <!-- Page header section start -->
     <section class="page-header-section set-bg" data-setbg="img/header-bg.jpg">
         <div class="container">
-            <h1 class="header-title">About us<span>.</span></h1>
+            <h1 class="header-title" data-aos="fade-up" data-aos-duration="500">About us<span>.</span></h1>
         </div>
     </section>
     <!-- Page header section end -->
@@ -313,6 +313,7 @@
 
     <!--====== Javascripts & Jquery ======-->
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -321,6 +322,13 @@
     <script src="js/circle-progress.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/colorpicker.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+            easing: 'ease-out-quart',
+            once: false
+        });
+    </script>
 </body>
 
 </html>
