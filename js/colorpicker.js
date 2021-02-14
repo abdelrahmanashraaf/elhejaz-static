@@ -34,14 +34,14 @@ $(document).ready(() => {
     const picker_2 = $("#cback_3").first();
     picker_2.on('input', (e) => {
         removeBorder();
-        document.documentElement.style.setProperty('--background-color', e.target.value);
+        document.documentElement.style.setProperty('--secondary-color', e.target.value);
         $(picker_1).addClass("cp-btn-selected");
     });
 
     for (let index = 0; index < I; index++) {
 
         $("#cback_btn_" + index).first().on('click', (e) => {
-            document.documentElement.style.setProperty('--background-color', colors[index]);
+            document.documentElement.style.setProperty('--secondary-color', colors[index]);
             $(".no-border").removeClass("cback-btn-selected");
             $(e.target).addClass("cback-btn-selected");
         });

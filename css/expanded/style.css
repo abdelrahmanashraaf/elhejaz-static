@@ -8,8 +8,8 @@
 /*----------------------------------------*/
 :root {
   --primary-color: #F9CE34;
-  --secondary-color: #ffff;
-  --background-color: #121212;
+  --secondary-color: #121212;
+  --background-color: #ffff;
   --color-1: #F9CE34;
   --color-2: #f54831;
   --color-3: #e5b155;
@@ -481,7 +481,7 @@ ol {
   width: 17%;
   float: left;
   display: inline-block;
-  background: var(--background-color);
+  background: var(--secondary-color);
   padding: 20px 40px 35px;
 }
 
@@ -558,7 +558,7 @@ ol {
   position: absolute;
   width: 100px;
   height: 100%;
-  background: var(--background-color);
+  background: var(--secondary-color);
   z-index: 20;
 }
 
@@ -1983,7 +1983,7 @@ ol {
     position: absolute;
     width: calc(100% - 90px);
     left: 80px;
-    background: var(--background-color);
+    background: var(--secondary-color);
     top: 100%;
     margin-top: 11px;
     display: none;
@@ -2118,7 +2118,7 @@ ol {
     padding: 10px 10px 10px;
   }
   .header-area {
-    background: var(--background-color);
+    background: var(--secondary-color);
     padding-right: 66px;
   }
   .nav-menu {
@@ -2848,7 +2848,7 @@ ol {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background: var(--background-color);
+  background: var(--secondary-color) var(--secondary-color);
   border: unset;
   margin: 0;
   margin-top: 10px;
