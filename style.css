@@ -461,7 +461,7 @@ ol {
 .logo-area {
     float: left;
     display: inline-block;
-    background: #121212;
+    background: var(--background-color);
     padding: 20px 60px 30px;
 }
 
@@ -543,7 +543,7 @@ ol {
     position: absolute;
     width: 100px;
     height: 100%;
-    background: #121212;
+    background: var(--background-color);
     z-index: 20;
 }
 
@@ -2029,7 +2029,7 @@ ol {
         position: absolute;
         width: calc(100% - 90px);
         left: 80px;
-        background: #121212;
+        background: var(--background-color);
         top: 100%;
         margin-top: 11px;
         display: none;
@@ -2153,7 +2153,7 @@ ol {
         padding: 20px 30px 30px;
     }
     .header-area {
-        background: #121212;
+        background: var(--background-color);
         padding-right: 66px;
     }
     .nav-menu {

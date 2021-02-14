@@ -47,6 +47,7 @@
     .cp-btn-selected {
         border: solid;
     }
+    //secondary colors
     input[type='color'],
     .cs-btn {
         padding: 0;
@@ -71,14 +72,15 @@
     .cs-btn-selected {
         border: solid;
     }
+    //background colors
     input[type='color'],
-    .ct-btn {
+    .cback-btn {
         padding: 0;
         width: 150%;
         height: 150%;
         margin: -25%;
     }
-    .ct-btn {
+    .cback-btn {
         width: 20px;
         height: 20px;
         border-radius: 100%;
@@ -88,11 +90,11 @@
         margin-top: 10px;
     }
     @for $i from 1 through 8 {
-        #ct_btn_#{$i} {
+        #cback_btn_#{$i} {
             background: var(--color-#{$i});
         }
     }
-    .ct-btn-selected {
+    .cback-btn-selected {
         border: solid;
     }
 }

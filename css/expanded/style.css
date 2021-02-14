@@ -8,8 +8,8 @@
 /*----------------------------------------*/
 :root {
   --primary-color: #F9CE34;
-  --secondary-color: #121212;
-  --background-color: #ffff;
+  --secondary-color: #ffff;
+  --background-color: #121212;
   --color-1: #F9CE34;
   --color-2: #f54831;
   --color-3: #e5b155;
@@ -481,7 +481,7 @@ ol {
   width: 17%;
   float: left;
   display: inline-block;
-  background: #121212;
+  background: var(--background-color);
   padding: 20px 40px 35px;
 }
 
@@ -558,7 +558,7 @@ ol {
   position: absolute;
   width: 100px;
   height: 100%;
-  background: #121212;
+  background: var(--background-color);
   z-index: 20;
 }
 
@@ -1983,7 +1983,7 @@ ol {
     position: absolute;
     width: calc(100% - 90px);
     left: 80px;
-    background: #121212;
+    background: var(--background-color);
     top: 100%;
     margin-top: 11px;
     display: none;
@@ -2118,7 +2118,7 @@ ol {
     padding: 10px 10px 10px;
   }
   .header-area {
-    background: #121212;
+    background: var(--background-color);
     padding-right: 66px;
   }
   .nav-menu {
@@ -2837,14 +2837,14 @@ ol {
 }
 
 .picker-container input[type='color'],
-.picker-container .ct-btn {
+.picker-container .cback-btn {
   padding: 0;
   width: 150%;
   height: 150%;
   margin: -25%;
 }
 
-.picker-container .ct-btn {
+.picker-container .cback-btn {
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -2854,39 +2854,39 @@ ol {
   margin-top: 10px;
 }
 
-.picker-container #ct_btn_1 {
+.picker-container #cback_btn_1 {
   background: var(--color-1);
 }
 
-.picker-container #ct_btn_2 {
+.picker-container #cback_btn_2 {
   background: var(--color-2);
 }
 
-.picker-container #ct_btn_3 {
+.picker-container #cback_btn_3 {
   background: var(--color-3);
 }
 
-.picker-container #ct_btn_4 {
+.picker-container #cback_btn_4 {
   background: var(--color-4);
 }
 
-.picker-container #ct_btn_5 {
+.picker-container #cback_btn_5 {
   background: var(--color-5);
 }
 
-.picker-container #ct_btn_6 {
+.picker-container #cback_btn_6 {
   background: var(--color-6);
 }
 
-.picker-container #ct_btn_7 {
+.picker-container #cback_btn_7 {
   background: var(--color-7);
 }
 
-.picker-container #ct_btn_8 {
+.picker-container #cback_btn_8 {
   background: var(--color-8);
 }
 
-.picker-container .ct-btn-selected {
+.picker-container .cback-btn-selected {
   border: solid;
 }
 /*# sourceMappingURL=style.css.map */
