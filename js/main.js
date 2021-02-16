@@ -374,13 +374,22 @@ if (window.location.pathname === '/index.html') {
     btn.on('click', function(e) {});
 
     var download = $('#download');
+    var chatButtons = $('#chatButton');
+    var chatButtons1 = $('#chatButton1');
+    var chatButtons2 = $('#chatButton2');
 
     //back to top button
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
+        if ($(window).scrollTop() > 500) {
             download.addClass('show');
+            chatButtons.addClass('show');
+            chatButtons1.addClass('show');
+            chatButtons2.addClass('show');
         } else {
             download.removeClass('show');
+            chatButtons.removeClass('show');
+            chatButtons1.removeClass('show');
+            chatButtons2.removeClass('show');
         }
     });
 }
@@ -399,7 +408,7 @@ var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-    if (window.pageYOffset > sticky) {
+    if (window.pageYOffset > sticky + 500) {
         header.classList.add("sticky");
     } else {
         header.classList.remove("sticky");

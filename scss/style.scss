@@ -464,6 +464,7 @@ ol {
     width: 100%;
     top: 0;
     z-index: 50;
+    transition: all 1000ms;
 }
 
 
@@ -1966,6 +1967,20 @@ ol {
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
+    .floatWhatsapp {
+        position: fixed;
+        width: 10%;
+        height: 10%;
+        bottom: 20px;
+        left: 20px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 250%;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
     .spad {
         padding: 50px 0;
     }
@@ -2138,6 +2153,20 @@ ol {
 /* small mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+    .floatWhatsapp {
+        position: fixed;
+        width: 10%;
+        height: 10%;
+        bottom: 200px;
+        left: 20px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 250%;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
     .spad {
         padding: 50px 0;
     }
@@ -2261,10 +2290,11 @@ ol {
 #button {
     display: inline-block;
     background-color: var(--primary-color);
-    width: 50px;
-    height: 50px;
+    width: auto;
+    height: 6%;
     text-align: center;
     border-radius: 4px;
+    padding: 0.3%;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -2272,16 +2302,10 @@ ol {
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-}
-
-#button::after {
-    content: "\f019";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: var(--background-color);
+    p {
+        font-size: 90%;
+        font-weight: 500;
+    }
 }
 
 #button:hover {
@@ -2296,6 +2320,85 @@ ol {
 #button.show {
     opacity: 1;
     visibility: visible;
+}
+
+#chatButton {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#chatButton.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#chatButton1 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#chatButton1.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#chatButton2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#chatButton2.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.floatWhatsapp {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    bottom: 40px;
+    left: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 45px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.floatMessenger {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    bottom: 140px;
+    left: 40px;
+    background-color: rgb(0, 132, 255);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 45px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.floatLiveChat {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    bottom: 80px;
+    left: 140px;
+    background-color: var(--primary-color);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 45px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
 }
 
 
