@@ -758,6 +758,18 @@ ol {
   opacity: 1;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("../img/bg.jpg");
+  /* Full height */
+  height: 50%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*----------------------------------------*/
 /*  Intro Section CSS
   /*----------------------------------------*/
