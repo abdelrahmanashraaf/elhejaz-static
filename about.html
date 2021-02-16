@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css" />
 
 
@@ -26,16 +27,29 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+    <title>About - Elhejaz</title>
+
+
 </head>
 
 <body>
     <!-- Page Preloder -->
     <div id="preloder">
+        <a href="index.html" class="logo-area-loader">
+            <img src="img/logo.png" class="logo" alt="">
+        </a>
         <div class="loader"></div>
+
+        <h3 style="
+        font-weight: 500;
+        position: absolute;
+        top: 55%;
+        left: 37%;
+        ">El Hejaz .. More than just good .. it's Art</h3>
     </div>
 
     <!-- Header section start -->
-    <header class="header-area">
+    <header class="header-area header" id="myHeader">
         <a href="index.html" class="logo-area">
             <img src="img/logo.png" class="logo" alt="">
         </a>
@@ -59,7 +73,7 @@
     <!-- Page header section start -->
     <section class="page-header-section set-bg" data-setbg="img/header-bg.jpg">
         <div class="container">
-            <h1 class="header-title" data-aos="fade-up" data-aos-duration="500">About us<span>.</span></h1>
+            <h1 class="header-title" data-aos="fade-up" data-aos-duration="1000">About us<span>.</span></h1>
         </div>
     </section>
     <!-- Page header section end -->
@@ -70,9 +84,13 @@
     <section class="intro-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 intro-text">
-                    <h1>We are a creative Architecture<span>Studio</span></h1>
-                    <div class="row">
+                <div class="col-lg-8 intro-text" data-aos="fade-up-right" data-aos-duration="1000">
+                    <h2 class="sp-title">We are a creative Architecture <span class="reveal-holder" style="height: 65px;margin-bottom: -10px; " data-aos="reveal-item">
+                        <div class="reveal-block right" data-aos="reveal-right"></div>
+                        <h1>Studio</h1>
+                       </span>
+                    </h2>
+                    <div class="row" data-aos="fade-up" data-aos-duration="1000">
                         <div class="col-md-6">
                             <p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris malesuada, accumsan pellentesque ipsum. Nunc dapibus,
                                 libero ut pulvinar accumsan, tortor nisl iaculis ligula. </p>
@@ -84,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 pt-4">
-                    <img src="img/about.jpg" alt="">
+                    <img src="img/about.jpg" alt="" data-aos="fade-up-left" data-aos-duration="1000">
                 </div>
             </div>
         </div>
@@ -94,13 +112,17 @@
 
     <!-- Testimonials section start -->
     <section class="testimonials-section spad">
-        <div class="testimonials-image-box"></div>
+        <div class="testimonials-image-box" data-aos="fade-right" data-aos-duration="1000"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 pl-lg-0 offset-lg-5 cta-content">
-                    <h1>Clients <span>testimonials</span></h1>
+                    <h1 class="sp-title">Clients <span class="reveal-holder" style="height: 65px;margin-bottom: -10px; " data-aos="reveal-item">
+                        <div class="reveal-block right" data-aos="reveal-right"></div>
+                        <span>testimonials</span>
+                        </span>
+                    </h1>
                     <div class="qut">“</div>
-                    <div class="testimonials-slider" id="test-slider">
+                    <div class="testimonials-slider" id="test-slider" data-aos="fade-up" data-aos-duration="1000">
                         <div class="ts-item">
                             <p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris malesuada, accumsan pellentesque ipsum. Nunc dapibus,
                                 libero ut pulvinar accumsan, tortor nisl iaculis ligula. Curabitur finibus dolor vel lectus pretium interdum a eget ante. </p>
@@ -133,11 +155,14 @@
     <section class="team-section spad">
         <div class="container">
             <div class="section-title mb100">
-                <h1>The Team</h1>
+                <div class="reveal-holder" data-aos="reveal-item">
+                    <div class="reveal-block right" data-aos="reveal-right"></div>
+                    <h1>The Team</h1>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="team-member">
+                    <div class="team-member" data-aos="flip-left" data-aos-duration="1000">
                         <img src="img/team/1.jpg" alt="">
                         <div class="member-info">
                             <h2>Jack Smith</h2>
@@ -146,7 +171,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="team-member">
+                    <div class="team-member" data-aos="fade-up" data-aos-duration="1000">
                         <img src="img/team/2.jpg" alt="">
                         <div class="member-info">
                             <h2>Lili Jameson</h2>
@@ -155,7 +180,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="team-member">
+                    <div class="team-member" data-aos="flip-right" data-aos-duration="1000">
                         <img src="img/team/3.jpg" alt="">
                         <div class="member-info">
                             <h2>Michael Dow</h2>
@@ -173,11 +198,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 promo-text">
-                    <h1>In need of a <span>fabulouse</span> home?</h1>
+                    <h1 class="sp-title">In need of a <span class="reveal-holder" style="height: 65px;margin-bottom: -10px; margin-right: 20px; " data-aos="reveal-item">
+                        <div class="reveal-block right" data-aos="reveal-right"></div>
+                        <span>fabulouse</span>
+                        </span>home?</h1>
+                    </h1?>
                     <p>Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia lectus. Pellentesque sed accumsan risus.</p>
                 </div>
                 <div class="col-lg-3 text-lg-right">
-                    <a href="#" class="site-btn sb-dark mt-4">Get in Touch</a>
+                    <a href="#" class="site-btn sb-dark mt-4" data-aos="fade-left" data-aos-duration="1000">Get in Touch</a>
                 </div>
             </div>
         </div>
@@ -315,6 +344,8 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.owl-filter.js"></script>

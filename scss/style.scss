@@ -466,11 +466,48 @@ ol {
     z-index: 50;
 }
 
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+
+.sticky {
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    width: 100%;
+    .logo-area {
+        width: 12%;
+        float: left;
+        display: inline-block;
+        background: var(--secondary-color);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
 .logo-area {
     width: 17%;
     float: left;
     display: inline-block;
     background: var(--secondary-color);
+    padding: 20px 40px 35px;
+}
+
+.logo-area-loader {
+    width: 17%;
+    position: absolute;
+    top: 35%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    background: transparent;
     padding: 20px 40px 35px;
 }
 
@@ -847,6 +884,10 @@ ol {
     padding-left: 43px;
     padding-top: 15px;
     position: relative;
+    img {
+        padding-left: 4%;
+        padding-top: 4%;
+    }
     h2 {
         margin-bottom: 0;
         font-size: 68px;
@@ -855,15 +896,24 @@ ol {
         position: relative;
         z-index: 1;
     }
-    p {
+    h3 {
         float: left;
-        font-size: 20px;
+        font-size: 21px;
         margin-top: 10px;
         margin-left: 10px;
-        line-height: 1.5;
         position: relative;
         z-index: 1;
         font-weight: 500;
+    }
+    p {
+        float: left;
+        font-size: 18px;
+        margin-left: 15px;
+        line-height: 1.5;
+        margin-top: -9%;
+        position: relative;
+        z-index: 1;
+        font-weight: 400;
     }
     &:after {
         position: absolute;
@@ -2189,6 +2239,25 @@ ol {
     overflow-y: hidden;
 }
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    top: -5px;
+    right: 105%;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 #button {
     display: inline-block;
     background-color: var(--primary-color);
@@ -2206,7 +2275,7 @@ ol {
 }
 
 #button::after {
-    content: "\f077";
+    content: "\f019";
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;

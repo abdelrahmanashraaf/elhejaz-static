@@ -325,50 +325,85 @@ function portfolio_item_size() {
     });
 }
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml6 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({ loop: false })
-    .add({
-        targets: '.ml6 .letter',
-        translateY: ["1.1em", 0],
-        translateZ: 0,
-        duration: 1500,
-        delay: 400,
-        delay: (el, i) => 70 * i
-    });
+if (window.location.pathname === '/index.html') {
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml6 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: false })
+        .add({
+            targets: '.ml6 .letter',
+            translateY: ["1.1em", 0],
+            translateZ: 0,
+            duration: 1500,
+            delay: 400,
+            delay: (el, i) => 70 * i
+        });
 
 
-
-$('#counter').waypoint(function() {
-    $('.milestones-section .aos-animate').ready(function() {
-        $('.counter-value').each(function() {
-            $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 3500,
-                easing: 'swing',
-                step: function(now) {
-                    $(this).text(Math.ceil(now));
-                }
+    //counter animation
+    $('#counter').waypoint(function() {
+        $('.milestones-section .aos-animate').ready(function() {
+            $('.counter-value').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 3500,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
             });
         });
+    }, {
+        offset: '100%'
     });
-}, {
-    offset: '100%'
-});
-var btn = $('#button');
+    var btn = $('#button');
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
+    //back to top button
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {});
+
+    var download = $('#download');
+
+    //back to top button
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            download.addClass('show');
+        } else {
+            download.removeClass('show');
+        }
+    });
+}
+
+
+//sticky header
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() { myFunction() };
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
     } else {
-        btn.removeClass('show');
+        header.classList.remove("sticky");
     }
-});
+}
 
-btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, '300');
-});
+window.addEventListener('load', AOS.refresh)
