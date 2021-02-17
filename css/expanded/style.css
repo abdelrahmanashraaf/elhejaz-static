@@ -605,7 +605,6 @@ ol {
   /*----------------------------------------*/
 .hero-section {
   height: 960px;
-  background: #ededed;
   position: relative;
 }
 
@@ -762,7 +761,19 @@ ol {
   /* The image used */
   background-image: url("../img/bg.jpg");
   /* Full height */
-  height: 50%;
+  height: 35%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-head {
+  /* The image used */
+  background-image: url("../img/bg.jpg");
+  /* Full height */
+  height: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -2378,31 +2389,16 @@ ol {
 }
 
 #chatButton {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#chatButton.show {
   opacity: 1;
   visibility: visible;
 }
 
-#chatButton1 {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#chatButton1.show {
+d #chatButton1 {
   opacity: 1;
   visibility: visible;
 }
 
 #chatButton2 {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#chatButton2.show {
   opacity: 1;
   visibility: visible;
 }

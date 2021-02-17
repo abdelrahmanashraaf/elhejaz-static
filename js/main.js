@@ -326,7 +326,7 @@ function portfolio_item_size() {
 }
 
 
-if (window.location.pathname === '/index.html') {
+if (window.location.pathname === '/index.html' || window.location.pathname === '/' || window.location.pathname === '/#') {
     // Wrap every letter in a span
     var textWrapper = document.querySelector('.ml6 .letters');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
