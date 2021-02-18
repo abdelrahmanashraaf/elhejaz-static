@@ -693,22 +693,22 @@ ol {
     margin-left: 350px;
     margin-bottom: 50px;
     padding-left: 190px;
-    padding-top: 170px;
+    padding-top: 25%;
     padding-bottom: 70px;
     position: relative;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
     &:after {
         position: absolute;
         content: "";
-        height: calc(100% + 50px);
+        height: calc(85% + 50px);
         width: 330px;
         border-top: 150px solid var(--primary-color);
         border-left: 150px solid var(--primary-color);
         border-bottom: 90px solid var(--primary-color);
-        top: 0;
+        top: 25%;
         left: 0;
         opacity: 0.73;
     }
@@ -1831,6 +1831,9 @@ ol {
     font-size: 45px;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
+    &:hover {
+        color: black;
+    }
 }
 
 .floatMessenger {
@@ -1846,6 +1849,9 @@ ol {
     font-size: 45px;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
+    &:hover {
+        color: black;
+    }
 }
 
 .floatLiveChat {
@@ -1861,6 +1867,9 @@ ol {
     font-size: 45px;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
+    &:hover {
+        color: black;
+    }
 }
 
 .my-float {
