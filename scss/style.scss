@@ -582,7 +582,7 @@ ol {
 .left-bar {
     position: absolute;
     width: 100px;
-    height: 100%;
+    height: 90%;
     background: var(--secondary-color);
     z-index: 20;
     .left-bar-content {
@@ -669,11 +669,11 @@ ol {
 
 .slide-num-holder {
     width: 153px;
-    height: 250px;
+    height: 125px;
     position: absolute;
     right: 60px;
     background: var(--secondary-color);
-    bottom: -40px;
+    bottom: 80px;
     z-index: 111;
     text-align: right;
     padding-right: 20px;
@@ -703,8 +703,8 @@ ol {
     &:after {
         position: absolute;
         content: "";
-        height: calc(85% + 50px);
-        width: 330px;
+        height: calc(75% + 50px);
+        width: 300px;
         border-top: 150px solid var(--primary-color);
         border-left: 150px solid var(--primary-color);
         border-bottom: 90px solid var(--primary-color);
@@ -2478,6 +2478,11 @@ ol {
 #button.show {
     opacity: 1;
     visibility: visible;
+}
+
+.parallax-window {
+    min-height: 100%;
+    background: transparent;
 }
 
 
