@@ -474,7 +474,7 @@ ol {
 .img-popup-warp .mfp-content {
   opacity: 0;
   -webkit-transform: scale(0.8);
-  transform: scale(0.8);
+          transform: scale(0.8);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -482,7 +482,7 @@ ol {
 .img-popup-warp.mfp-ready .mfp-content {
   opacity: 1;
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 
 /*----------------------------------------*/
@@ -493,8 +493,8 @@ ol {
   width: 100%;
   top: 0;
   z-index: 50;
-  -webkit-transition: all 1000ms;
-  transition: all 1000ms;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -504,6 +504,8 @@ ol {
   top: 0;
   z-index: 1001;
   width: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .sticky .logo-area {
@@ -514,6 +516,11 @@ ol {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
+}
+
+.sticky_change {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
